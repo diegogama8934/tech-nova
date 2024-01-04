@@ -17,7 +17,7 @@ export const LoginForm = () => {
                     <input type="checkbox" />
                     <p className="text-text text-sm">Recordar datos</p>
                 </div>
-                <p className="text-text text-sm">¿No recuerdas tu contraseña? <Link href="/login/recoveraccount"><b>Recupera tu cuenta</b></Link>.</p>
+                <p className="text-text text-sm">¿No recuerdas tu contraseña? <Link href="/LoginScreen/RecoverAccount"><b>Recupera tu cuenta</b></Link>.</p>
                 <button className="bg-primary px-6 py-4 rounded text-white">Iniciar sesión</button>
             {/* </div> */}
 
