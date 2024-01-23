@@ -10,7 +10,8 @@ module.exports = {
       'primary':'#0077B8',
       'text':'#515151',
       'white': '#FFFFFF',
-      'btnhover':'#EFEFEF'
+      'btnhover':'#EFEFEF',
+      'inputColor':'#f3f4f6'
     },
     extend: {
       backgroundImage: {
