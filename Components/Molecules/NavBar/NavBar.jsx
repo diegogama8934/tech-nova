@@ -15,10 +15,10 @@ export const NavBar = () => {
         </Link>
         <div className='flex gap-6'>
           <button className='text-text px-2 py-1 text-center rounded-t hover:bg-btnhover'>
-            <Link href='/add' className='text-sm'>Agregar integrante</Link>
+            <Link href='/AddMemberScreen' className='text-sm'>Agregar integrante</Link>
           </button>
           <button className='text-text px-2 py-1 text-center rounded-t hover:bg-btnhover'>
-            <Link href='/login' className='text-sm'>Iniciar sesión</Link>
+            <Link href='/LoginScreen' className='text-sm'>Iniciar sesión</Link>
           </button>
           <button className='text-text px-2 py-1 text-center rounded-t hover:bg-btnhover'>
             <Link href='/' className='text-sm'>Regístrate</Link>
