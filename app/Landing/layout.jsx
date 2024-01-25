@@ -1,9 +1,4 @@
-import { Inter } from 'next/font/google'
 import { NavBar } from '@/Components/Molecules/NavBar/NavBar'
-import '../globals.css'
-
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Tech Nova',
@@ -12,11 +7,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className='scroll-smooth'>
-      <body className={inter.className}>
+    <>
         <NavBar></NavBar>
         {children}
-      </body>
-    </html>
+    </>
   )
 }

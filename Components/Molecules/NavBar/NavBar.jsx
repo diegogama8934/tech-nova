@@ -14,13 +14,13 @@ export const NavBar = () => {
         />
       </Link>
       <div className='flex gap-6'>
-        <Link href='/AddMemberScreen' className="rounded">
+        <Link href='/Landing/AddMemberScreen' className="rounded">
           <button className='text-text text-sm px-2 py-1 h-full text-center rounded hover:bg-btnhover'>Agregar integrante</button>
         </Link>
-        <Link href='/LoginScreen' className='text-sm'>
+        <Link href='/Landing/LoginScreen' className='text-sm'>
           <button className='text-text text-sm px-2 py-1 h-full text-center rounded hover:bg-btnhover'>Iniciar sesión</button>
         </Link>
-        <Link href='/SignUpScreen' className='text-sm'>
+        <Link href='/Landing/SignUpScreen' className='text-sm'>
           <button className='text-text text-sm px-2 py-1 h-full text-center rounded hover:bg-btnhover'>Regístrate</button>
         </Link>
         {/* <button className='text-text px-2 py-1 text-center rounded-t hover:bg-btnhover'>
