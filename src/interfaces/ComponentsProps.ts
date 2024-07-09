@@ -5,3 +5,9 @@ export interface PageHeader {
 export interface DropMenu {
     isOpen: boolean
 }
+
+export interface PendingProject {
+    name: string
+    isActive: boolean
+    problems: number
+}
