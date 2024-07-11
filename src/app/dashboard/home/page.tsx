@@ -1,6 +1,7 @@
 import { PageHeader } from "@/components/PageHeader";
 import { PendingProject } from "@/components/PendingProject";
-import { pendingProjects } from "@/utils/fakeData"
+import { ProjectProgress } from "@/components/ProjectProgress";
+import { pendingProjects, projectsProgress } from "@/utils/fakeData"
 
 
 export default function HomePage() {
@@ -16,6 +17,14 @@ export default function HomePage() {
 
         {
           pendingProjects.map((project, index) => (<PendingProject key={index} {...project} />))
+        }
+      </div>
+
+      <div className="flex flex-col gap-2">
+        <h2 className="text-2xl text-zinc-600 mb-4">Progreso del proyecto</h2>
+
+        {
+          projectsProgress.map((project) => <ProjectProgress key={project.projectId} {...project} />)
         }
       </div>
 

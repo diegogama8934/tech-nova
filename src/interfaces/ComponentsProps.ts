@@ -7,7 +7,14 @@ export interface DropMenu {
 }
 
 export interface PendingProject {
+    projectId: string
     name: string
     isActive: boolean
     problems: number
+}
+
+export interface ProjectProgress {
+    projectId: string
+    name: string
+    advance: number
 }
