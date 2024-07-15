@@ -1,4 +1,4 @@
-import type { PendingProject, ProjectProgress } from "@/interfaces/ComponentsProps";
+import type { PendingProject, ProjectProgress, PendingWork } from "@/interfaces/ComponentsProps";
 
 export const pendingProjects: PendingProject[] = [
     {
@@ -49,3 +49,26 @@ export const projectsProgress: ProjectProgress[] = [
         advance: 30
     }
 ]
+
+export const pendingWorks: PendingWork[] = [
+    {
+        projectId: "bolsadetrabajo",
+        name: "Tarea 1",
+        workId: "tarea1"
+    },
+    {
+        projectId: "teach",
+        name: "Tarea 2",
+        workId: "tarea2"
+    },
+    {
+        projectId: "becas",
+        name: "Tarea 3",
+        workId: "tarea3"
+    },
+    {
+        projectId: "technova",
+        name: "Tarea 4",
+        workId: "tarea4"
+    }
+];

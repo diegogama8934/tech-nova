@@ -1,7 +1,8 @@
 import { PageHeader } from "@/components/PageHeader";
 import { PendingProject } from "@/components/PendingProject";
 import { ProjectProgress } from "@/components/ProjectProgress";
-import { pendingProjects, projectsProgress } from "@/utils/fakeData"
+import { PendingWork } from "@/components/PendingWork";
+import { pendingProjects, projectsProgress, pendingWorks } from "@/utils/fakeData"
 
 
 export default function HomePage() {
@@ -28,6 +29,13 @@ export default function HomePage() {
         }
       </div>
 
+      <div className="flex flex-col gap-2">
+        <h2 className="text-2xl text-zinc-600 mb-4">Tareas pendientes</h2>
+
+        {
+          pendingWorks.map((work) => <PendingWork key={work.workId} {...work} />)
+        }
+      </div>
     </div>
   );
 }
